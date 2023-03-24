@@ -80,7 +80,7 @@ const actualizar = async function (id, create_date, name, description, keywords,
             temaRetorno = await ThemeModel.update(data, { where : {id : id}});
             temaRetorno = data;
         } else {
-            //Incluir
+            
             temaRetorno = await ThemeModel.create(data);
         }
         return temaRetorno;
